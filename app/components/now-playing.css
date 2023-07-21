@@ -37,3 +37,11 @@
   border-radius: 100%;
   padding: 5px;
 }
+
+.now-playing-enter, .now-playing-leave-to {
+  transform: translateY(451px);
+}
+
+.now-playing-enter-active, .now-playing-leave-active {
+  transition: transform 300ms ease-in-out;
+}
