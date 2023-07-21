@@ -1,5 +1,7 @@
 <section class="album-card" ...attributes>
-  <img class="album-card-cover" src={{@album.cover}} alt="Cover art for {{@album.name}}" data-test-album-card-cover={{@album.id}} />
+  {{#animated-value @album use=this.transition duration=500 as |v|}}
+    <img class="album-card-cover" src={{v.cover}} alt="Cover art for {{v.name}}" data-test-album-card-cover={{v.id}} />
+  {{/animated-value}}
   <div class="album-card-content">
     <h3 class="album-card-name">{{@album.name}}</h3>
     <p class="album-card-description">{{@album.description}}</p>
