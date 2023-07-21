@@ -23,17 +23,26 @@
   /* closed */
   overflow: hidden;
   height: 0;
+
+  transition: height 0.3s ease;
 }
 
 .collapse[open] .collapse-content {
   /* open */
   height: unset;
+
+  transition: height 0.3s ease;
 }
 
 .collapse[open] > .collapse-summary {
   border-radius: 4px 4px 0 0;
 }
 
+.collapse-icon {
+  transition: transform 0.3s ease;
+}
+
 .collapse[open] .collapse-icon {
   transform: rotate(90deg);
+  transition: transform 0.3s ease;
 }
