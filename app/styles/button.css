@@ -10,15 +10,18 @@
   background: #fff;
   display: inline-block;
   margin-bottom: 15px;
+  transition: all 0.15s;
 }
 
 .button:hover {
   background: #dadbdc;
+  transition: all 0.15s;
 }
 
 .button:active {
   color: #fff;
   background: #e04e39;
+  transition: all 0.15s;
 }
 
 .button:active path {
